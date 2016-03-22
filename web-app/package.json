@@ -1,0 +1,21 @@
+{
+    "name": "contact-list-web-app",
+    "version": "0.0.0",
+    "dependencies": {},
+    "repository": {},
+    "devDependencies": {
+        "http-server": "^0.6.1"
+    },
+    "engines": {
+        "node": ">=0.10.0"
+    },
+    "dependencies": {
+        "jquery": "^2.0.0",
+        "bootstrap": "^3.3.0",
+        "angular": "^1.5.2"
+    },
+    "scripts": {
+        "prestart": "npm install",
+        "start": "http-server -a 0.0.0.0 -p 8000"
+    }
+}

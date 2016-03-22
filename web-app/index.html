@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app="contactApp">
+
+<head>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" />
+    <script src="./node_modules/angular/angular.js"></script>
+    <script src="./js/controllers.js"></script>
+</head>
+
+<body ng-controller="ContactListCtrl">
+    <center>
+        <h1> Contact List</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                </tr>
+            </thead>
+            <tr ng-repeat="contact in contacts">
+                <td>{{ contact.name }}</td>
+                <td>{{ contact.phoneNo }}</td>
+            </tr>
+        </table>
+        <center>
+</body>
+
+</html>
